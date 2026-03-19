@@ -6,9 +6,10 @@ This repository contains my dotfiles and scripts that I use to setup my devepmen
 ## Usage
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/emiliosheinz/dotfiles/main/init.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/vedovato/dotfiles2026/main/init.sh)"
 ```
 
 ## Inspiration
 
+- https://github.com/emiliosheinz/dotfiles
 - https://github.com/CoreyMSchafer/dotfiles

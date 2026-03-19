@@ -1,6 +1,6 @@
 [user]
-	name = Emilio Heinzmann
-	email = emiliosheinz@gmail.com
+	name = Andrei Vedovato
+	email = vedovato.andrei@gmail.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -9,7 +9,7 @@
 [core]
 	editor = nvim 
 [credential]
-	username = emiliosheinz
+	username = vedovato
 	helper = osxkeychain
 [pull]
 	rebase = false

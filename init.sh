@@ -47,7 +47,7 @@ else
   read
 fi
 
-git clone --recurse-submodules git@github.com:emiliosheinz/dotfiles.git $HOME/dotfiles
+git clone --recurse-submodules git@github.com:vedovato/dotfiles2026.git $HOME/dotfiles
 
 echo ""
 echo "Dotfiles repository cloned to $HOME/dotfiles"

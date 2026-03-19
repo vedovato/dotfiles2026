@@ -34,8 +34,6 @@ stow scripts
 stow zsh 
 stow nvim
 stow tmux
-stow opencode
-stow karabiner
 stow btop
 stow macos
 
@@ -48,7 +46,6 @@ brew install gnupg
 brew install ripgrep
 brew install jq
 brew install gh
-brew install anomalyco/tap/opencode
 
 # Modern CLI replacements
 echo "📦 Installing Modern CLI Tools"
@@ -87,6 +84,12 @@ fi
 echo "📦 Installing iTerm2"
 wait_for_confirmation
 brew install --cask iterm2 
+
+
+# Ghostty
+echo "📦 Installing Ghostty"
+wait_for_confirmation
+brew install --cask ghostty 
 
 # ZSH
 echo "📦 Installing Oh My Zsh"
@@ -144,13 +147,10 @@ brew install jesseduffield/lazydocker/lazydocker
 # Apps
 echo "📦 Installing Apps"
 wait_for_confirmation
-brew install --cask 1password
 brew install --cask google-chrome
 brew install --cask spotify
 brew install --cask raycast
 brew install --cask aldente
-brew install --cask rectangle
-brew install --cask karabiner-elements
 brew install --cask displaylink
 brew install --cask shottr
 
@@ -168,10 +168,6 @@ if [ -f ~/.macos ]; then
 else
   echo "⚠️  .macos script not found, skipping system defaults"
 fi
-
-echo "🔑 Setup 1Password and press enter when done"
-open -a "1Password"
-wait_for_confirmation
 
 echo "🌐 Setup Google Chrome and press enter when done"
 open -a "Google Chrome"
@@ -195,12 +191,6 @@ echo "🐳 Setup Docker and press enter when done"
 open -a "Docker"
 wait_for_confirmation
 
-echo "🔧 Setting up Rectangle shortcuts"
-echo "1. Give it the necessary permissions"
-echo "2. Import the configuration file from ~/dotfiles/rectangle/config.json"
-open -a "Rectangle"
-wait_for_confirmation
-
 echo "🍝 Setting up AlDente"
 echo "1. Enable 'Launch at login'"
 echo "2. Change limit to 75%"
@@ -212,12 +202,6 @@ echo "1. Go to Settings > General > Settings"
 echo "2. Click Import All Settings and Data"
 echo "3. Import the settings and data from ~/dotfiles/iterm2/config.itermexport" 
 open -a "iTerm"
-wait_for_confirmation
-
-echo "⌨️  Setting up Karabiner-Elements"
-echo "1. Grant necessary permissions when prompted"
-echo "2. Configuration is already symlinked"
-open -a "Karabiner-Elements"
 wait_for_confirmation
 
 echo "📸 Setting up Shottr"
