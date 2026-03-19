@@ -31,3 +31,7 @@ if command -v btop &> /dev/null; then
   alias top='btop'
   alias htop='btop'
 fi
+
+alias n='nvim'
+alias c='clear'
+alias lg='lazygit'

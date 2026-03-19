@@ -85,7 +85,6 @@ echo "📦 Installing iTerm2"
 wait_for_confirmation
 brew install --cask iterm2 
 
-
 # Ghostty
 echo "📦 Installing Ghostty"
 wait_for_confirmation
