@@ -149,7 +149,6 @@ wait_for_confirmation
 brew install --cask google-chrome
 brew install --cask spotify
 brew install --cask raycast
-brew install --cask aldente
 brew install --cask displaylink
 brew install --cask shottr
 
@@ -157,6 +156,7 @@ brew install --cask shottr
 echo "📦 Installing Fonts"
 wait_for_confirmation
 brew install --cask font-fira-code-nerd-font
+brew install --cask font-monaspace
 
 # Apply macOS system defaults
 echo "🔧 Applying macOS system defaults"
@@ -188,12 +188,6 @@ wait_for_confirmation
 
 echo "🐳 Setup Docker and press enter when done"
 open -a "Docker"
-wait_for_confirmation
-
-echo "🍝 Setting up AlDente"
-echo "1. Enable 'Launch at login'"
-echo "2. Change limit to 75%"
-open -a "AlDente"
 wait_for_confirmation
 
 echo "💻 Setting up iTerm"
